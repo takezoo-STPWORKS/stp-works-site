@@ -1,0 +1,113 @@
+/* ===== stp.works — 現サイト（Wix）の見た目を再現 ===== */
+:root {
+  --content: 980px;            /* Wix の本文幅 */
+  --black: #000;
+  --gray: #757575;             /* 詳細テキスト */
+  --dark: #242323;             /* ABOUT 背景 */
+  --btn-steam: #282626;
+  --btn-switch: #fe0016;
+  --btn-text: #f6f4f0;
+  --hero-bg: #c7c7c7;
+  --font-display: "Montserrat", "Helvetica Neue", Arial, sans-serif;      /* Lulo Clean の代替 */
+  --font-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif; /* Rodin の代替 */
+  --font-footer: "Roboto", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; background: #fff; color: var(--black); font-family: var(--font-body); font-weight: 500; font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+picture { display: block; }
+
+.display { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; }
+
+/* ---- header ---- */
+.site-header { position: sticky; top: 0; z-index: 10; background: #fff; }
+.header-inner { max-width: var(--content); margin: 0 auto; height: 85px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+.logo img { width: 245px; height: auto; }
+.site-nav { display: flex; gap: 27px; }
+.site-nav a { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 20px; line-height: 40px; padding: 0 2px; white-space: nowrap; }
+.site-nav a:hover { opacity: .6; }
+
+/* ---- hero ---- */
+.hero { background: var(--hero-bg); }
+.hero-link, .hero picture, .hero img { display: block; width: 100%; }
+.hero img { aspect-ratio: 1265 / 827; object-fit: cover; max-height: 92vh; }
+
+/* ---- section titles ---- */
+.section-title { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 50px; line-height: 1.5; text-align: center; margin: 0; }
+
+/* ---- games ---- */
+.games { padding: 36px 16px 60px; }
+.game-grid { max-width: var(--content); margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 38px; row-gap: 72px; padding: 0 8px; }
+.game { display: grid; grid-template-columns: 1fr; align-content: start; }
+.game-title { font-size: 25px; font-weight: 700; text-align: center; margin: 0 0 12px; line-height: 1.25; }
+.game-desc { margin: 24px 0 0; white-space: normal; }
+.game-meta { margin: 20px 0 0; color: var(--gray); }
+.game-meta div { display: flex; gap: 0; }
+.game-meta dt { flex: none; font-weight: 500; }
+.game-meta dt::after { content: "："; }
+.game-meta dd { margin: 0; }
+.buttons { display: flex; gap: 26px; margin-top: 28px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; width: 142px; height: 40px; font-size: 15px; letter-spacing: .05em; color: var(--btn-text); font-weight: 700; transition: opacity .15s; }
+.btn:hover { opacity: .8; }
+.btn-steam { background: var(--btn-steam); }
+.btn-switch { background: var(--btn-switch); }
+
+/* 大: 1件目（最新作）— 画面幅いっぱい、下部は2カラム */
+.game.large { grid-column: 1 / -1; margin-top: 44px; grid-template-columns: 1fr; }
+.game.large picture { max-width: 906px; margin: 0 auto; }
+.game.large .game-body { display: grid; grid-template-columns: 1fr 1fr; column-gap: 38px; margin-top: 36px; }
+.game.large .game-desc { margin-top: 0; }
+.game.large .game-meta { margin-top: 0; }
+/* 中・小はカードそのまま。小は少し縮める */
+.game.small { max-width: 292px; margin: 0 auto; width: 100%; }
+.game.small .game-title { font-size: 20px; }
+.game.small .btn { width: 138px; height: 46px; }
+.game.small .buttons { gap: 16px; }
+
+/* ---- about ---- */
+.about { background: var(--dark); color: #fff; padding: 20px 16px 32px; text-align: center; }
+.about-list { margin: 20px auto 0; display: inline-block; text-align: left; }
+.about-list div { display: flex; }
+.about-list dt::after { content: "："; }
+.about-list dd { margin: 0; }
+.social { display: flex; justify-content: center; gap: 13px; margin-top: 20px; }
+.social img { width: 40px; height: 40px; }
+.social a:hover { opacity: .75; }
+
+/* ---- contact ---- */
+.contact { padding: 44px 16px 66px; text-align: center; }
+.contact-text { font-weight: 700; margin: 28px 0 0; }
+
+/* ---- footer ---- */
+.site-footer { padding: 20px 16px 22px; text-align: center; color: var(--gray); font-family: var(--font-footer); font-weight: 300; }
+.footer-links { display: flex; justify-content: center; gap: 60px; }
+.footer-links a:hover { text-decoration: underline; }
+.copyright { margin: 12px 0 0; font-weight: 700; line-height: 1.4; }
+
+/* ---- mobile ---- */
+@media (max-width: 960px) {
+  .header-inner { height: auto; flex-direction: column; gap: 8px; padding: 14px 16px 10px; }
+  .logo img { width: 200px; }
+  .site-nav { gap: 18px; }
+  .site-nav a { font-size: 15px; line-height: 32px; }
+  html { scroll-padding-top: 110px; }
+  .hero img { aspect-ratio: 16 / 9; max-height: none; }
+  .section-title { font-size: 34px; }
+  .games { padding-top: 24px; }
+  .game-grid { grid-template-columns: 1fr; row-gap: 56px; padding: 0; }
+  .game.large { margin-top: 24px; }
+  .game.large .game-body { grid-template-columns: 1fr; }
+  .game.large .game-meta { margin-top: 20px; }
+  .game.small { max-width: none; }
+  .game.small .game-title { font-size: 25px; }
+  .game.small .btn { width: 142px; height: 40px; }
+  .game.small .buttons { gap: 26px; }
+  .footer-links { gap: 28px; }
+}
+@media (max-width: 400px) {
+  .site-nav { gap: 12px; }
+  .site-nav a { font-size: 13px; letter-spacing: .1em; }
+  .buttons { flex-wrap: wrap; }
+}

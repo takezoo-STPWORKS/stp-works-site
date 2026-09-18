@@ -1,0 +1,20 @@
+{
+  "title": "株式会社STP WORKS",
+  "description": "低価格でマルチプレイできるSteam/Nintendo Switch向けインディーゲームを二人で開発してます！",
+  "url": "https://www.stp.works/",
+  "about": [
+    ["商号", "株式会社STP WORKS"],
+    ["設立", "2021年6月23日"],
+    ["広報担当", "ダンおじ"]
+  ],
+  "social": [
+    { "name": "X (Twitter)", "icon": "icon-x", "url": "https://twitter.com/stpworks" },
+    { "name": "YouTube", "icon": "icon-youtube", "url": "https://www.youtube.com/channel/UC_UIRvJVZOarAn_Xt_bH3Eg" },
+    { "name": "Discord", "icon": "icon-discord", "url": "https://discord.com/invite/QXgZGxHR6J" },
+    { "name": "TikTok", "icon": "icon-tiktok", "url": "https://www.tiktok.com/@stp_works" }
+  ],
+  "contact": "お問い合わせは各種SNSのDMやdiscord等でご連絡ください",
+  "privacyPolicyUrl": "https://www.kiyac.app/plivacypolicy/B7jkRvKkXPR6Zg8uJ9IH",
+  "pressKitUrl": "https://drive.google.com/drive/folders/1W7-RnLWKYEdaciZm2UflJorGU_8u4arY?usp=sharing",
+  "copyright": "© 2021 STP WORKS Co., Ltd."
+}
