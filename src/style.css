@@ -24,6 +24,8 @@ picture { display: block; }
 /* ---- header ---- */
 .site-header { position: sticky; top: 0; z-index: 10; background: #fff; }
 .header-inner { max-width: var(--content); margin: 0 auto; height: 85px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; }
+.logo { margin: 0; font-size: 0; line-height: 0; }
+.logo a { display: block; }
 .logo img { width: 245px; height: auto; }
 .site-nav { display: flex; gap: 27px; }
 .site-nav a { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 20px; line-height: 40px; padding: 0 2px; white-space: nowrap; }

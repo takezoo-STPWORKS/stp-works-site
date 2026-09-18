@@ -3,16 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{TITLE}}</title>
+  <title>{{TITLE_TAG}}</title>
   <meta name="description" content="{{DESCRIPTION}}">
   <link rel="canonical" href="{{URL}}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  {{SITE_VERIFICATION}}
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:site_name" content="{{TITLE}}">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="{{TITLE_TAG}}">
   <meta property="og:description" content="{{DESCRIPTION}}">
   <meta property="og:url" content="{{URL}}">
   <meta property="og:image" content="{{URL}}assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{TITLE}}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{TWITTER}}">
+  <meta name="twitter:title" content="{{TITLE_TAG}}">
+  <meta name="twitter:description" content="{{DESCRIPTION}}">
+  <meta name="twitter:image" content="{{URL}}assets/img/og.jpg">
   <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="preload" as="image" href="{{HERO_IMG}}" imagesrcset="{{HERO_SRCSET}}" imagesizes="100vw" fetchpriority="high">
+  <script type="application/ld+json">{{JSON_LD}}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
@@ -22,7 +35,7 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <a class="logo" href="#top" aria-label="STP WORKS ホーム"><img src="assets/img/logo.png" alt="STP WORKS" width="245" height="40"></a>
+      <h1 class="logo"><a href="#top"><img src="assets/img/logo.png" alt="株式会社STP WORKS" width="245" height="40"></a></h1>
       <nav class="site-nav" aria-label="メインメニュー">
         <a href="#top">HOME</a>
         <a href="#game">GAME</a>
