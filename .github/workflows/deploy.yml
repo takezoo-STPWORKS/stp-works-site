@@ -1,0 +1,60 @@
+name: Build & Deploy (GitHub Pages)
+
+on:
+  push:
+    branches: [main, preview]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (本番)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+      - name: Checkout preview (プレビュー・存在すれば)
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: preview
+          path: preview
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build 本番 → site/
+        run: |
+          cd main && node build.mjs && cd ..
+          mkdir -p site && cp -r main/dist/. site/
+          touch site/.nojekyll
+      - name: Build プレビュー → site/preview/（noindex）
+        run: |
+          if [ -f preview/build.mjs ]; then
+            cd preview && node build.mjs && cd ..
+            mkdir -p site/preview && cp -r preview/dist/. site/preview/
+            sed -i 's|<head>|<head><meta name="robots" content="noindex,nofollow">|' site/preview/index.html
+            rm -f site/preview/robots.txt site/preview/sitemap.xml
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

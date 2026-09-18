@@ -32,7 +32,7 @@ picture { display: block; }
 /* ---- hero ---- */
 .hero { background: var(--hero-bg); }
 .hero-link, .hero picture, .hero img { display: block; width: 100%; }
-.hero img { aspect-ratio: 1265 / 827; object-fit: cover; max-height: 92vh; }
+.hero img { aspect-ratio: 1265 / 827; object-fit: cover; }
 
 /* ---- section titles ---- */
 .section-title { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 50px; line-height: 1.5; text-align: center; margin: 0; }
@@ -49,7 +49,7 @@ picture { display: block; }
 .game-meta dt::after { content: "："; }
 .game-meta dd { margin: 0; }
 .buttons { display: flex; gap: 26px; margin-top: 28px; }
-.btn { display: inline-flex; align-items: center; justify-content: center; width: 142px; height: 40px; font-size: 15px; letter-spacing: .05em; color: var(--btn-text); font-weight: 700; transition: opacity .15s; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-width: 142px; padding: 0 14px; height: 40px; white-space: nowrap; font-size: 15px; letter-spacing: .05em; color: var(--btn-text); font-weight: 700; transition: opacity .15s; }
 .btn:hover { opacity: .8; }
 .btn-steam { background: var(--btn-steam); }
 .btn-switch { background: var(--btn-switch); }
@@ -63,7 +63,7 @@ picture { display: block; }
 /* 中・小はカードそのまま。小は少し縮める */
 .game.small { max-width: 292px; margin: 0 auto; width: 100%; }
 .game.small .game-title { font-size: 20px; }
-.game.small .btn { width: 138px; height: 46px; }
+.game.small .btn { min-width: 138px; height: 46px; }
 .game.small .buttons { gap: 16px; }
 
 /* ---- about ---- */
@@ -102,7 +102,7 @@ picture { display: block; }
   .game.large .game-meta { margin-top: 20px; }
   .game.small { max-width: none; }
   .game.small .game-title { font-size: 25px; }
-  .game.small .btn { width: 142px; height: 40px; }
+  .game.small .btn { min-width: 142px; height: 40px; }
   .game.small .buttons { gap: 26px; }
   .footer-links { gap: 28px; }
 }
