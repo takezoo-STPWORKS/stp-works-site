@@ -32,7 +32,7 @@ picture { display: block; }
 /* ---- hero ---- */
 .hero { background: var(--hero-bg); }
 .hero-link, .hero picture, .hero img { display: block; width: 100%; }
-.hero img { aspect-ratio: 1265 / 827; object-fit: cover; }
+.hero img { aspect-ratio: 16 / 9; object-fit: cover; }  /* 元画像と同じ比率＝見切れなし */
 
 /* ---- section titles ---- */
 .section-title { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 50px; line-height: 1.5; text-align: center; margin: 0; }
@@ -60,11 +60,6 @@ picture { display: block; }
 .game.large .game-body { display: grid; grid-template-columns: 1fr 1fr; column-gap: 38px; margin-top: 36px; }
 .game.large .game-desc { margin-top: 0; }
 .game.large .game-meta { margin-top: 0; }
-/* 中・小はカードそのまま。小は少し縮める */
-.game.small { max-width: 292px; margin: 0 auto; width: 100%; }
-.game.small .game-title { font-size: 20px; }
-.game.small .btn { min-width: 138px; height: 46px; }
-.game.small .buttons { gap: 16px; }
 
 /* ---- about ---- */
 .about { background: var(--dark); color: #fff; padding: 20px 16px 32px; text-align: center; }
@@ -100,10 +95,6 @@ picture { display: block; }
   .game.large { margin-top: 24px; }
   .game.large .game-body { grid-template-columns: 1fr; }
   .game.large .game-meta { margin-top: 20px; }
-  .game.small { max-width: none; }
-  .game.small .game-title { font-size: 25px; }
-  .game.small .btn { min-width: 142px; height: 40px; }
-  .game.small .buttons { gap: 26px; }
   .footer-links { gap: 28px; }
 }
 @media (max-width: 400px) {

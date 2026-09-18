@@ -10,8 +10,8 @@ const nl2br = (s) => esc(s).split("\n").map((l) => l.trim()).filter(Boolean).joi
 
 const featured = games.find((g) => g.featured) ?? games[0];
 const list = games.filter((g) => !g.featured).concat(games.filter((g) => g.featured && g !== featured));
-// 一覧の階層: 1件目=大, 2〜5件目=中, 以降=小（現サイトの見た目に合わせる）
-const tier = (i) => (i === 0 ? "large" : i <= 4 ? "medium" : "small");
+// 一覧の階層: 1件目=大, 2件目以降=中（すべて同じサイズ）
+const tier = (i) => (i === 0 ? "large" : "medium");
 
 const picture = (g, sizes) => `
       <picture>
