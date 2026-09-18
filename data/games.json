@@ -5,7 +5,9 @@
     "featured": true,
     "image": "kosen-gaiden",
     "description": "「古銭プッシャーフレンズ」シリーズの基本的なシステムを継承しながらも、過去のシリーズ作品とは一味違ったプレイ体験のゲームです。\n村で侍を強化したり、侍がアクションを起こすために必要な「行動の珠」を編成したりなどの準備を行います。\n準備したら洞窟探索へ向かいます。探索中には敵が出現したり、宝箱を見つけたり、他にも様々なイベントが発生します。\n洞窟の奥を探索するのが目的です。",
-    "release": ["2026年8月12日（Steam / Nintendo Switch 2）"],
+    "release": [
+      "2026年8月12日（Steam / Nintendo Switch 2）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語 / 中国語（簡体字）/ 中国語（繁体字）/ 韓国語",
     "platforms": "Steam / Nintendo Switch 2",
@@ -18,7 +20,9 @@
     "title": "ボールすくいフレンズ",
     "image": "ball-scooping-friends",
     "description": "日本のお祭りなどで見かける「ボールすくい」と「射的」を融合した、オンライン協力プレイ可能なゲームです。すくったボールを射的の景品に向かって発射し、様々な景品やアイテムを獲得します。取ったアイテムによって、お金が増えたりイベントが発生したりします。",
-    "release": ["2025年5月2日（Steam）"],
+    "release": [
+      "2025年5月2日（Steam）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam",
@@ -29,7 +33,10 @@
     "title": "古銭プッシャーフレンズ参",
     "image": "kosen3",
     "description": "江戸時代を舞台にした、オンライン協力プレイ型のコインプッシャーゲーム「古銭プッシャーフレンズ」のシリーズ3作目です。今作では、東海道五十三次をテーマにしたすごろくがあり、止まったマスによって様々なイベントが発生します。",
-    "release": ["2024年7月26日（Steam）", "2024年12月26日（Nintendo Switch）"],
+    "release": [
+      "2024年7月26日（Steam）",
+      "2024年12月26日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語 / 中国語（簡体字）/ 中国語（繁体字）/ 韓国語",
     "platforms": "Steam / Nintendo Switch",
@@ -41,7 +48,9 @@
     "title": "フライドポテトプッシャーフレンズ",
     "image": "friedpotato-pusher-friends",
     "description": "「フライドポテトプッシャーフレンズ」はフライドポテトを使って敵を倒しつつ、HPが0になるまでの間に様々なバーガーセットを何個提供できるかをランキングで競うゲームです。シングルプレイでも最大4人のマルチプレイでも遊べます。",
-    "release": ["2024年1月12日（Steam）"],
+    "release": [
+      "2024年1月12日（Steam）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam",
@@ -52,7 +61,10 @@
     "title": "古銭プッシャーフレンズ弐",
     "image": "kosen2",
     "description": "「古銭プッシャーフレンズ弐」は前作「古銭プッシャーフレンズ」の続編です。メダルゲームといえば外せないメダルタワー「古銭の塔」。ジャックポットも前作から進化し他プレイヤーのジャックポットも共有されるようになりました。",
-    "release": ["2023年5月19日（Steam）", "2024年3月28日（Nintendo Switch）"],
+    "release": [
+      "2023年5月19日（Steam）",
+      "2024年3月28日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語 / 中国語（簡体字）/ 中国語（繁体字）",
     "platforms": "Steam / Nintendo Switch",
@@ -64,7 +76,10 @@
     "title": "スイーツプッシャーフレンズ",
     "image": "sweets-pusher-friends",
     "description": "ゲーセンのアレ！が最大4人で遊べる\nお菓子タワーを崩した爽快感！最大4人の共闘イベントや脳汁あふれるフィーバーなどをフレンズ達と遊びつくそう！",
-    "release": ["2023年2月10日（Steam）", "2023年7月20日（Nintendo Switch）"],
+    "release": [
+      "2023年2月10日（Steam）",
+      "2023年7月20日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam / Nintendo Switch",
@@ -76,31 +91,40 @@
     "title": "メダルオブガーディアンズ",
     "image": "medal-of-guardians",
     "description": "育成とスキル集めに夢中になれる最大4人のマルチプレイが手軽に楽しめる！弾幕×ハクスラ！",
-    "release": ["2022年11月19日（Steam）", "2023年7月6日（Nintendo Switch）"],
+    "release": [
+      "2022年11月19日（Steam）",
+      "2023年7月6日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam / Nintendo Switch",
     "steamUrl": "https://store.steampowered.com/app/2088170/_/",
-    "switchUrl": "https://store-jp.nintendo.com/item/software/D70010000066325"
+    "switchUrl": "https://store-jp.nintendo.com/item/software/D70010000066672"
   },
   {
     "id": "marbleball-friends",
     "title": "マーブルボールフレンズ",
     "image": "marbleball-friends",
     "description": "森のせせらぎとリラックスサウンドに癒やされながら、一風変わったスマートボールを最大5人のマルチプレイで遊べる、疲れた日にこそ遊んでほしい睡眠導入ゲームです。",
-    "release": ["2022年4月29日（Steam）", "2023年6月22日（Nintendo Switch）"],
+    "release": [
+      "2022年4月29日（Steam）",
+      "2023年6月22日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam / Nintendo Switch",
     "steamUrl": "https://store.steampowered.com/app/1892640/_/",
-    "switchUrl": "https://store-jp.nintendo.com/item/software/D70010000066672"
+    "switchUrl": "https://store-jp.nintendo.com/item/software/D70010000066325"
   },
   {
     "id": "kosen1",
     "title": "古銭プッシャーフレンズ",
     "image": "kosen1",
     "description": "疲れるゲームしていませんか？\n和風のBGMに癒やされながらゆる～くプレイできる最大5人同時プレイの協力型マルチプレイメダルゲーム",
-    "release": ["2021年10月8日（Steam）", "2022年3月3日（Nintendo Switch）"],
+    "release": [
+      "2021年10月8日（Steam）",
+      "2022年3月3日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam / Nintendo Switch",
@@ -112,7 +136,10 @@
     "title": "フードデリバリーバトル",
     "image": "food-delivery-battle",
     "description": "VRoidHub対応の爆走フードデリバリーゲーム\n貯めたマネーを使って自転車を強化し、ステージに配置されたギミックも使い、各種ランキング1位を目指します。",
-    "release": ["2021年9月3日（Steam）", "2021年2月3日（Nintendo Switch）"],
+    "release": [
+      "2021年9月3日（Steam）",
+      "2021年2月3日（Nintendo Switch）"
+    ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
     "platforms": "Steam / Nintendo Switch",
