@@ -126,6 +126,8 @@ const jsonLd = {
 };
 
 const html = tpl
+  .replaceAll("{{ANALYTICS}}", site.gaMeasurementId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(site.gaMeasurementId)}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(site.gaMeasurementId)}',{anonymize_ip:true});</script>` : "")
   .replaceAll("{{TITLE_TAG}}", esc(site.titleTag ?? site.title))
   .replaceAll("{{TWITTER}}", esc(site.twitterHandle ?? ""))
   .replaceAll("{{SITE_VERIFICATION}}", site.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(site.googleSiteVerification)}">` : "")
