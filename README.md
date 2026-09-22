@@ -6,7 +6,7 @@ Wix から移行した静的サイト。**ゲーム情報は `data/games.json` �
 
 | パス | 役割 |
 |---|---|
-| `data/games.json` | ゲームタイトル一覧（新作追加はここ）。`featured: true` の1件が最上部の大枠に出る。並び順＝配列の順 |
+| `data/games.json` | ゲームタイトル一覧（新作追加はここ）。`featured: true` の1件が最上部（LATEST RELEASE）に大きく出る。下の WORKS は配列の順のまま、`release` 1行目の年ごとにまとめて表示 |
 | `data/site.json` | 会社情報・SNS・フッターのリンク |
 | `assets/img/` | 画像（`<id>.webp` と `<id>-sm.webp` の2枚組） |
 | `src/template.html`, `src/style.css` | 見た目 |

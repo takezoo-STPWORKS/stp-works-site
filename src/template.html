@@ -25,61 +25,105 @@
   <meta name="twitter:image" content="{{URL}}assets/img/og.jpg">
   <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="preload" as="image" href="{{HERO_IMG}}" imagesrcset="{{HERO_SRCSET}}" imagesizes="100vw" fetchpriority="high">
+  <meta name="theme-color" content="#f6f5f1">
+  <link rel="preload" as="image" href="{{HERO_IMG}}" imagesrcset="{{HERO_SRCSET}}" imagesizes="(max-width: 960px) 100vw, 700px" fetchpriority="high">
   <script type="application/ld+json">{{JSON_LD}}</script>
   {{ANALYTICS}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Zen+Kaku+Gothic+New:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- built {{BUILD_DATE}} -->
 </head>
 <body>
   <header class="site-header">
-    <div class="header-inner">
-      <h1 class="logo"><a href="#top"><img src="assets/img/logo.png" alt="株式会社STP WORKS" width="245" height="40"></a></h1>
-      <nav class="site-nav" aria-label="メインメニュー">
-        <a href="#top">HOME</a>
-        <a href="#game">GAME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
-      </nav>
+    <div class="inner header-inner">
+      <h1 class="logo"><a href="#top"><img src="assets/img/logo.png" alt="株式会社STP WORKS" width="980" height="160"></a></h1>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="メニューを開く">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="menu" id="menu">
+        <nav class="site-nav" aria-label="メインメニュー">
+          <a href="#works">WORKS</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+        <span class="menu-sep" aria-hidden="true"></span>
+        <div class="header-social">
+          {{SOCIAL_ICONS}}
+        </div>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero" aria-label="最新作">{{HERO}}
+    <section class="hero" aria-label="最新作">
+      <div class="inner hero-inner">{{HERO}}
+      </div>
     </section>
 
-    <section class="games" id="game">
-      <h2 class="section-title">Game</h2>
-      <div class="game-grid">{{GAMES}}
+    <section class="studio" aria-label="スタジオ紹介">
+      <div class="inner">
+        <p class="eyebrow">STUDIO</p>
+        <p class="studio-lead"><span class="ib">低価格でマルチプレイできる</span><span class="ib">インディーゲームを、</span><br><span class="ib">二人で開発しています。</span></p>
+        <p class="studio-sub">Steam / Nintendo Switch 向け ｜ {{FOUNDING_YEAR}}年設立</p>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="inner">
+        <div class="section-head">
+          <h2 class="section-title">WORKS</h2>
+          <p class="section-note"><span class="hide-sp">発売タイトル </span>{{GAME_COUNT}}作品（新しい順）</p>
+        </div>
+        <div class="years">{{WORKS}}
+        </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <h2 class="section-title">ABOUT</h2>
-      <dl class="about-list">
-          {{ABOUT}}
-      </dl>
-      <div class="social">
-          {{SOCIAL}}
+      <div class="inner about-inner">
+        <div class="about-head">
+          <h2 class="section-title">ABOUT</h2>
+          <p class="section-note">会社情報・お問い合わせ</p>
+        </div>
+        <div class="about-body">
+          <dl class="about-list">
+            {{ABOUT}}
+            <div id="contact"><dt>お問い合わせ</dt><dd>{{CONTACT}}</dd></div>
+          </dl>
+          <div class="sns">
+            {{SOCIAL}}
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="section-title">CONTACT</h2>
-      <p class="contact-text">{{CONTACT}}</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <nav class="footer-links" aria-label="フッターメニュー">
-      <a href="{{PRIVACY_URL}}" target="_blank" rel="noopener">プライバシーポリシー</a>
-      <a href="{{PRESSKIT_URL}}" target="_blank" rel="noopener">プレスキット</a>
-    </nav>
-    <p class="copyright">{{COPYRIGHT}}</p>
+    <div class="inner footer-inner">
+      <img class="footer-logo" src="assets/img/logo.png" alt="STP WORKS" width="980" height="160" loading="lazy">
+      <nav class="footer-links" aria-label="フッターメニュー">
+        <a href="{{PRIVACY_URL}}" target="_blank" rel="noopener">プライバシーポリシー</a>
+        <a href="{{PRESSKIT_URL}}" target="_blank" rel="noopener">プレスキット</a>
+      </nav>
+      <p class="copyright">{{COPYRIGHT}}</p>
+    </div>
   </footer>
+
+  <script>
+    (() => {
+      const header = document.querySelector(".site-header");
+      const toggle = header.querySelector(".menu-toggle");
+      const setOpen = (open) => {
+        header.classList.toggle("is-open", open);
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "メニューを閉じる" : "メニューを開く");
+      };
+      toggle.addEventListener("click", () => setOpen(!header.classList.contains("is-open")));
+      header.querySelectorAll(".site-nav a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    })();
+  </script>
 </body>
 </html>
