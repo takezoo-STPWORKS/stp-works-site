@@ -161,7 +161,6 @@ const html = tpl
   .replaceAll("{{URL}}", esc(site.url))
   .replaceAll("{{HERO}}", hero)
   .replaceAll("{{WORKS}}", worksHtml)
-  .replaceAll("{{GAME_COUNT}}", String(games.length))
   .replaceAll("{{ABOUT}}", about)
   .replaceAll("{{SOCIAL_ICONS}}", socialIcons)
   .replaceAll("{{SOCIAL}}", social)
