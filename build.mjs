@@ -1,5 +1,6 @@
 // 静的サイトビルド: data/*.json + src/template.html → dist/index.html
 import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync } from "node:fs";
+import { createHash } from "node:crypto";
 
 const games = JSON.parse(readFileSync("data/games.json", "utf8"));
 const site = JSON.parse(readFileSync("data/site.json", "utf8"));
@@ -56,13 +57,21 @@ for (const g of games) {
   if (!last || last.year !== y) years.push((last = { year: y, items: [] }));
   last.items.push({ g, d });
 }
-const work = ({ g, d }) => `
+// 機種ごとの発売日：「2024年12月26日（Nintendo Switch）」→ Switch 2024.12.26（年の見出しは最初の発売年のまま）
+const releaseDates = (g) => {
+  const rows = g.release.map((r) => {
+    const d = ymd(r);
+    const pf = (String(r).match(/（(.+)）/)?.[1] ?? "").replaceAll("Nintendo ", "");
+    return d ? `<div><dt>${esc(pf)}</dt><dd>${d.dot}</dd></div>` : "";
+  }).join("");
+  return rows ? `<dl class="work-dates">${rows}</dl>` : "";
+};
+const work = ({ g }) => `
             <article class="work" id="game-${esc(g.id)}">
               <img class="work-img" src="assets/img/${g.image}-sm.webp" alt="${esc(g.title)}" loading="lazy" decoding="async" width="960" height="540">
               <div class="work-body">
-                ${d ? `<p class="work-date">${d.dot}</p>` : ""}
                 <h3 class="work-title">${esc(g.title)}</h3>
-                <p class="work-platforms">${esc(g.platforms)}</p>
+                ${releaseDates(g)}
                 ${storeButtons(g, "work-buttons")}
               </div>
             </article>`;
@@ -168,7 +177,9 @@ const html = tpl
   .replaceAll("{{PRIVACY_URL}}", esc(site.privacyPolicyUrl))
   .replaceAll("{{PRESSKIT_URL}}", esc(site.pressKitUrl))
   .replaceAll("{{COPYRIGHT}}", esc(site.copyright))
-  .replaceAll("{{BUILD_DATE}}", new Date().toISOString());
+  .replaceAll("{{BUILD_DATE}}", new Date().toISOString())
+  // CSS を変えたら URL も変わるようにして、古い style.css のキャッシュで崩れて見えるのを防ぐ
+  .replace('href="style.css"', `href="style.css?v=${createHash("md5").update(readFileSync("src/style.css")).digest("hex").slice(0, 8)}"`);
 
 rmSync("dist", { recursive: true, force: true });
 mkdirSync("dist", { recursive: true });
