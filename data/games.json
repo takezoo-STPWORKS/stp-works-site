@@ -49,12 +49,14 @@
     "image": "friedpotato-pusher-friends",
     "description": "「フライドポテトプッシャーフレンズ」はフライドポテトを使って敵を倒しつつ、HPが0になるまでの間に様々なバーガーセットを何個提供できるかをランキングで競うゲームです。シングルプレイでも最大4人のマルチプレイでも遊べます。",
     "release": [
-      "2024年1月12日（Steam）"
+      "2024年1月12日（Steam）",
+      "2026年10月15日（Nintendo Switch）"
     ],
     "price": "470円（$3.99）",
     "languages": "日本語 / 英語",
-    "platforms": "Steam",
-    "steamUrl": "https://store.steampowered.com/app/2714330/_/"
+    "platforms": "Steam / Nintendo Switch",
+    "steamUrl": "https://store.steampowered.com/app/2714330/_/",
+    "switchUrl": "https://store-jp.nintendo.com/item/software/D70010000136097"
   },
   {
     "id": "kosen2",
