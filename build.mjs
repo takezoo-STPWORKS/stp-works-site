@@ -1,6 +1,7 @@
 // 静的サイトビルド: data/*.json + src/template.html → dist/index.html
 import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { buildLegal } from "./legal.mjs";
 
 const games = JSON.parse(readFileSync("data/games.json", "utf8"));
 const site = JSON.parse(readFileSync("data/site.json", "utf8"));
@@ -186,7 +187,11 @@ mkdirSync("dist", { recursive: true });
 writeFileSync("dist/index.html", html);
 cpSync("assets", "dist/assets", { recursive: true });
 cpSync("src/style.css", "dist/style.css");
+cpSync("src/legal.css", "dist/legal.css");
+// スマホアプリの法務のページ（非公開：トップ・メニュー・サイトマップからリンクしない／noindex）→ legal.mjs
+const legalPages = buildLegal(site);
 writeFileSync("dist/404.html", `<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ページが見つかりません｜${esc(site.title)}</title><meta name="robots" content="noindex"><link rel="stylesheet" href="/style.css"></head><body style="text-align:center;padding:80px 16px"><h1 style="font-family:var(--font-latin);font-weight:500;font-size:40px;letter-spacing:.14em">404</h1><p>お探しのページは見つかりませんでした。</p><p><a href="/" style="text-decoration:underline">トップページへ戻る</a></p></body></html>`);
 writeFileSync("dist/robots.txt", `User-agent: *\nAllow: /\nSitemap: ${site.url}sitemap.xml\n`);
 writeFileSync("dist/sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${site.url}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>\n</urlset>\n`);
 console.log(`built dist/index.html (${games.length} games, featured: ${featured.title})`);
+console.log(`built ${legalPages.length} legal pages (noindex, not linked)`);

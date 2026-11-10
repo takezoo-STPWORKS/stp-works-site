@@ -1,0 +1,52 @@
+/* ===== 法務のページ（/<アプリ>/<言語>/<ページ>/）。style.css の色・文字の設定の上に重ねる ===== */
+body.legal { background: var(--paper); line-height: 1.85; overflow-wrap: anywhere; }
+.legal-inner { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+.legal a { text-decoration: underline; text-underline-offset: 3px; }
+.legal a:hover { color: var(--sub); }
+
+.legal-header { background: var(--ground); border-bottom: 1px solid var(--line); }
+.legal-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; }
+.legal-logo { text-decoration: none !important; }
+.legal-logo img { width: 160px; }
+.legal-lang { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 14px; }
+.legal-lang [aria-current] { font-weight: 700; }
+
+.legal-main { padding-top: 40px; padding-bottom: 72px; }
+.legal-app { margin: 0 0 8px; font-size: 14px; color: var(--sub); }
+.legal-body h1 { margin: 0 0 28px; font-size: 26px; line-height: 1.45; }
+.legal-body h2 { margin: 48px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); font-size: 20px; line-height: 1.5; scroll-margin-top: 16px; }
+.legal-body h3 { margin: 32px 0 8px; font-size: 17px; }
+.legal-body p { margin: 0 0 14px; }
+.legal-body ol, .legal-body ul { margin: 0 0 14px; padding-left: 1.8em; }
+.legal-body li { margin: 4px 0; }
+.legal-body li > ol, .legal-body li > ul { margin: 4px 0; }
+.legal-body blockquote { margin: 0 0 24px; padding: 12px 16px; background: var(--ground); border-left: 3px solid var(--line); font-size: 14px; }
+.legal-body blockquote p { margin: 0; }
+.legal-body hr { margin: 40px 0 24px; border: 0; border-top: 1px solid var(--line); }
+.table-wrap { margin: 0 0 18px; overflow-x: auto; }
+.legal-body table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.7; }
+.legal-body th, .legal-body td { padding: 10px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.legal-body thead th { background: var(--ground); white-space: nowrap; }
+.legal-body tbody th { font-weight: 700; min-width: 7em; }
+
+/* アカウントとデータの削除：依頼の方法を目立たせる */
+.legal-from { font-size: 14px; color: var(--sub); }
+.legal-delete > ol { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; counter-reset: del; }
+.legal-delete > ol > li { counter-increment: del; position: relative; margin: 0; padding: 18px 20px 18px 60px; background: var(--ground); border: 1px solid var(--line); }
+.legal-delete > ol > li::before { content: counter(del); position: absolute; left: 18px; top: 16px; width: 28px; height: 28px; border-radius: 50%; background: var(--ink); color: var(--paper); font-weight: 700; text-align: center; line-height: 28px; }
+.legal-delete > ol > li > strong:first-child { font-size: 17px; }
+
+.legal-footer { padding: 32px 0 40px; background: var(--ground); border-top: 1px solid var(--line); font-size: 14px; }
+.legal-docs { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+.legal-docs [aria-current] { font-weight: 700; }
+.legal-copy { margin: 20px 0 0; font-size: 13px; color: var(--sub); }
+
+@media (max-width: 600px) {
+  .legal-main { padding-top: 28px; }
+  .legal-body h1 { font-size: 22px; }
+  .legal-body h2 { font-size: 18px; }
+  .legal-body table { font-size: 13px; }
+  .legal-body th, .legal-body td { padding: 8px; }
+  .legal-delete > ol > li { padding: 16px 16px 16px 52px; }
+  .legal-delete > ol > li::before { left: 14px; }
+}
