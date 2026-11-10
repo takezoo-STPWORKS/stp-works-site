@@ -14,6 +14,6 @@
 | Timing and method of payment | The timing and method set by each store |
 | Time of delivery | You can download the App immediately after completing the purchase in the store |
 | Withdrawal of applications and returns (cancellations) | Because this is a digital product, we cannot accept returns or cancellations for the user's own reasons after purchase. Refunds are handled under the refund rules and procedures set by each store |
-| Operating environment | Android [ ] or later, iOS and iPadOS [ ] or later. For supported devices, please see the App's page in each store |
+| Operating environment | For the supported OS versions and devices, please see the App's page in each store |
 | If there is a defect | We will make efforts to fix defects. Refunds are handled under each store's refund rules |
 | Other conditions | An internet connection is required to use the online features (playing together with other users and the leaderboard). The online features may end in accordance with the Terms of Use |

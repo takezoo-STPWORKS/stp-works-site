@@ -115,7 +115,7 @@ When using the Service, you must not do any of the following:
 
 ## Article 12 (Streaming Videos and Sharing Images)
 
-You may publish images and videos that you capture of your gameplay on the internet in accordance with [the guidelines separately set by us].
+You may publish images and videos that you capture of your gameplay on the internet. This includes publishing by companies and publishing that uses the monetization features of video sites and similar services. There are no particular restrictions on what you say in these images and videos, and you are free to review or critique the App.
 
 ## Article 13 (Changes to, Interruption of, and Termination of the Service)
 
@@ -125,7 +125,7 @@ You may publish images and videos that you capture of your gameplay on the inter
    2. When it is difficult to provide the Service because of fire, power outage, natural disaster, failure of communication lines, or other events beyond our control
    3. When an external service used for the Service (such as the Stores, or external servers for communication and data storage) stops, or changes its terms of provision
    4. When we otherwise reasonably determine that an interruption is necessary for operational reasons
-3. We may end all or part of the online features (including the feature for playing together with other users, the leaderboard, and the data transfer feature) after giving notice in the App or on our website at least [30 days] in advance. However, in unavoidable cases, such as when an external service ends, we may shorten this period.
+3. We may end all or part of the online features (including the feature for playing together with other users, the leaderboard, and the data transfer feature) after giving notice in the App or on our website at least 30 days in advance. However, in unavoidable cases, such as when an external service ends, we may shorten this period.
 4. Even after we end the online features under the preceding paragraph, we will make efforts so that the parts of the game that can be played without the online features remain available, to the extent possible.
 5. Compensation for any damage you suffer because of changes, interruptions, or termination under this Article is governed by Article 15. Even if there are changes, interruptions, or termination under this Article, we will not refund the price of the App.
 6. We do not guarantee that the App will work on every device and operating system. The devices and operating systems on which the App works are shown on the App's page in the Stores and in other places.
@@ -153,7 +153,7 @@ Any dispute between you and another user (including users of the Steam version a
 1. We may change these Terms in either of the following cases:
    1. When the change is in the general interest of users
    2. When the change does not go against the purpose of these Terms and is reasonable in light of the need for the change, the appropriateness of the changed content, and other circumstances related to the change
-2. When we change these Terms under the preceding paragraph, we will announce in the App or on our website, at least [14 days] before the effective date, that these Terms are being changed, what the changed Terms say, and the effective date.
+2. When we change these Terms under the preceding paragraph, we will announce in the App or on our website, at least 14 days before the effective date, that these Terms are being changed, what the changed Terms say, and the effective date.
 3. If a change is significant, we may ask for your agreement again in the App.
 
 ## Article 18 (Special Provisions When You Obtain the App from a Store)
@@ -194,21 +194,21 @@ Email: support@stp.works
 
 For users living in Taiwan ("Taiwan users" in this Article), the following applies, notwithstanding the other provisions of these Terms, in line with Taiwan's "Mandatory and Prohibited Provisions for Standard Form Contracts for Online Game Services" (網路連線遊戲服務定型化契約應記載及不得記載事項):
 
-1. **Our information**: Our name, representative, address, phone number, website, and email address are shown on [our website's company information page].
+1. **Our information**: Our name, representative, address, phone number, website, and email address are shown on our website's business information page (https://www.stp.works/kosen2-mobile/en/tokushoho/).
 2. **Minors**: If you are a Taiwan user who is a minor, please use the Service only after your legal guardian has read, understood, and agreed to the full text of these Terms. The same applies when these Terms are changed. We also show this, in Chinese, when the App starts and on the Store page.
 3. **Reviewing the Terms**: Taiwan users can review the full text of these Terms on our website before purchasing the App. We will not ask users to give up the period for reviewing the Terms.
 4. **Advertisements and Game Management Rules**: Advertisements we issue about the Service, and the Game Management Rules (遊戲管理規則) we set (rules on player names, criteria for measures, and so on), form part of these Terms. If there is any doubt about the meaning of these Terms, they will be interpreted in favor of the user.
 5. **Fees**: The App is a one-time-purchase app that you obtain by paying a price in the Store, and no additional fees arise within the App.
-6. **Cancellation of the contract**: Within 7 days of starting to use the Service, Taiwan users can cancel the contract under these Terms by notifying us in writing or by email, without giving any reason. [How the price will be handled upon cancellation will be decided after review by a lawyer]
-7. **Age rating**: The App is rated [Parental Guidance 15+ (輔導十五歲級)] under Taiwan's Game Software Rating Regulations (遊戲軟體分級管理辦法).
+6. **Cancellation of the contract**: Within 7 days of starting to use the Service, Taiwan users can cancel the contract under these Terms by notifying us in writing or by email, without giving any reason.
+7. **Age rating**: The App is rated Parental Guidance 15+ (輔導十五歲級) under Taiwan's Game Software Rating Regulations (遊戲軟體分級管理辦法).
 8. **Accounts and data transfer**: Accounts and data transfer codes are for the sole use of the user they belong to. Our staff will never ask you for your data transfer code. If you learn that your account has been used by a third party, please let us know at the address in Article 22. We will look into it and take the necessary measures.
-9. **Keeping and providing play history**: We will keep Taiwan users' play history (遊戲歷程: when and what game results were recorded) for at least [30 days] and, if a user asks, provide it free of charge within 7 days of receiving the request. Even after the contract ends, we will keep the account and the data linked to it for at least [30 days]. However, if the user asks for the account to be deleted, we will delete it as requested.
+9. **Keeping and providing play history**: We will keep Taiwan users' play history (遊戲歷程: when and what game results were recorded) for at least 30 days and, if a user asks, provide it free of charge within 7 days of receiving the request. Even after the contract ends, we will keep the account and the data linked to it for at least 30 days. However, if the user asks for the account to be deleted, we will delete it as requested.
 10. **Use of data linked to the account**: Data linked to the account (electronic records, 電磁紀錄: game data such as your rating and play time) is managed by us, but Taiwan users have the right to use them within the Service (except for moving them outside the Service or earning income from them).
 11. **Maintenance**: We will announce scheduled maintenance in the App or on our website at least 7 days in advance (except for emergency maintenance).
 12. **Measures against violations**: When we take a measure under Article 10, we will notify you of it in the App. For a first violation, we will first ask you to correct it within a set period, and will restrict your use only if it is not corrected. Each restriction of use will last no more than 7 days. However, for serious violations, such as using unauthorized programs, attacking the Service, exploiting bugs, or repeating the same violation, we may end the contract immediately after notifying you. If our decision was wrong, we will cancel the measure and compensate you for any damage you suffered.
-13. **Appeals**: If Taiwan users have questions or objections about the Service, their account, or a measure, they can file an appeal at the address in Article 22 (accepted 24 hours a day) or through our telephone line [phone number and hours]. An appeal about a measure must be filed within 7 days, counting from the day after being notified of the measure. We will respond within 15 days of receiving the appeal.
+13. **Appeals**: If Taiwan users have questions or objections about the Service, their account, or a measure, they can file an appeal at the address in Article 22 (accepted 24 hours a day). An appeal about a measure must be filed within 7 days, counting from the day after being notified of the measure. We will respond within 15 days of receiving the appeal.
 14. **Changes to the Terms**: Notwithstanding Article 17, when we change these Terms, we will make a public announcement in the App or on our website and notify users. Taiwan users can object within 15 days of receiving the notice, and if they object, the contract will be treated as having ended.
 15. **Ending the contract**: Taiwan users can end the contract at any time. For Taiwan users who have not connected to the Service for 1 year or more, we may end the contract after notifying them and giving a deadline of at least 15 days.
 16. **End of online features**: The notice under Article 13, Paragraph 3 will be given at least 30 days in advance.
-17. **Compensation for damages**: Notwithstanding Article 15, we will be liable in accordance with Taiwan's Consumer Protection Act and other laws. [Whether the cap in Article 15 can be applied to Taiwan users will be decided after review by a lawyer]
+17. **Compensation for damages**: Notwithstanding Article 15, we will be liable in accordance with Taiwan's Consumer Protection Act and other laws.
 18. **Courts**: Article 21, Paragraph 2 does not prevent the application of Article 47 of Taiwan's Consumer Protection Act, or of Article 28, Paragraph 2 and Article 436-9 of Taiwan's Code of Civil Procedure.

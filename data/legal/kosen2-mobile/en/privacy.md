@@ -92,26 +92,26 @@ To provide the Service, the App sends information from your device to the follow
 | Information | Retention period |
 |---|---|
 | Player name, identifiers, game records | Until the account is deleted |
-| Records of suspected cheating | Until the account is deleted. However, for accounts against which we have taken measures under the Terms of Use, we keep the account's identifiers and the records of the reasons for [1 year] after the account is deleted, to prevent repeated cheating |
+| Records of suspected cheating | Until the account is deleted. However, for accounts against which we have taken measures under the Terms of Use, we keep the account's identifiers and the records of the reasons for 1 year after the account is deleted, to prevent repeated cheating |
 | Communication information (login records, IP address, approximate location) | Until the account is deleted |
 | Report information | Until the account of the user who made the report is deleted. However, if we have taken measures under the Terms of Use based on the report, the same period as "Records of suspected cheating" above |
 | Records of deletion requests | Until deletion is completed (deleted together with the account) |
 | Transfer information | Until the transfer is completed on the new device (deleted at that time). If you do not transfer, until the account is deleted |
 | Records of operator measures | Same period as "Records of suspected cheating" above |
-| Inquiry information | [3 years] after we finish responding |
+| Inquiry information | 3 years after we finish responding |
 | Game records on your device | Until you delete the App, or until you ask for deletion of your account and data from the App (we cannot delete records on your device remotely) |
 
-If we end the online features of the Service, we will delete the information in this table that we keep (except inquiry information and records of measures taken under the Terms of Use) within [6 months] after they end.
+If we end the online features of the Service, we will delete the information in this table that we keep (except inquiry information and records of measures taken under the Terms of Use) within 6 months after they end.
 
 ## 8. Deleting Your Account and Data {#delete}
 
 You can ask us to delete your account and the information we store about you in either of the following ways:
 
-1. **From the App**: Go to [Delete Account and Data] in [Settings].
+1. **From the App**: Go to "Delete Account & Data" in "Settings".
    The game records on this device are deleted immediately, and the next time you launch the App, you will start with a new account. Records on our servers are deleted as described in the next paragraph.
-2. **Without using the App** (for example, after you have deleted the App): Make a request at [URL of the deletion request page] or by email to support@stp.works, including the [in-game ID] and [verification code] shown in the App's [Settings] and your player name. If you do not know your in-game ID, please tell us your player name and the approximate date and time you last played. We will check the information you give us against our records to confirm that the request is from you.
+2. **Without using the App** (for example, after you have deleted the App): Make a request by email to support@stp.works, including the "in-game ID" and "verification code" shown in the App's "Settings" and your player name. If you do not know your in-game ID, please tell us your player name and the approximate date and time you last played. We will check the information you give us against our records to confirm that the request is from you.
 
-Within [30 days] of receiving a request, we will delete the account and the player name, game records, records of suspected cheating, login records, and transfer information linked to it, and also remove them from the leaderboard (except for records that Section 7 says we keep after deletion). We will also delete the records held by the companies we entrust with handling information (Section 4). Deleted accounts and game records cannot be restored.
+Within 30 days of receiving a request, we will delete the account and the player name, game records, records of suspected cheating, login records, and transfer information linked to it, and also remove them from the leaderboard (except for records that Section 7 says we keep after deletion). We will also delete the records held by the companies we entrust with handling information (Section 4). Deleted accounts and game records cannot be restored.
 
 If you wish to stop information from being sent to the Service, please also delete your account in this way and delete the App from your device.
 
@@ -139,9 +139,9 @@ If you open our pages on X (formerly Twitter) or Discord from the App, the handl
 
 You can make the following requests regarding personal data about you that we hold (retained personal data): notification of the purposes of use; disclosure; correction, addition, or deletion; suspension of use or erasure; suspension of provision to third parties; and disclosure of records of provision to third parties.
 
-- How to make a request: Send the details of your request, together with the [in-game ID] and [verification code] shown in the App's [Settings] and your player name, to support@stp.works.
+- How to make a request: Send the details of your request, together with the "in-game ID" and "verification code" shown in the App's "Settings" and your player name, to support@stp.works.
 - Identity verification: Because we do not hold users' real names, we verify your identity by checking the in-game ID, verification code, and player name you give us against our records. If a request is made by an agent (including a parent or guardian), we may ask for documents confirming the agent's authority.
-- Fees: [Free / 1,000 yen per request for notification of purposes of use and for disclosure]
+- Fees: 1,000 yen per request for notification of purposes of use and for disclosure
 
 ## 13. Contact Point and Business Operator
 
@@ -164,7 +164,7 @@ We may change this Policy in response to changes in laws or in the Service. When
 2. **No selling or sharing**: We do not sell your information, do not share it for other companies' advertising, and do not use it for advertising tailored to your interests (targeted advertising). Because the App does not track you across other apps or websites, it does not have a mechanism for responding to "Do Not Track" signals from web browsers.
 3. **Children under 13**: The Service is not directed at children under 13. If we learn that we have collected information from a child under 13 without the consent of their parent or guardian, we will delete that information. Parents and guardians who notice that their child's information has been sent, please let us know through the contact point in Section 13.
 4. **Your rights and complaints**: In accordance with the laws of the country or region where you live, you can ask for disclosure, correction, deletion, suspension of use, and other actions regarding your information. The methods are described in Sections 8 and 12. You can also file a complaint with the authority that supervises personal information protection in your country or region.
-5. **Person responsible for handling personal information**: [Title] (contact: support@stp.works)
+5. **Contact for the person responsible for handling personal information**: support@stp.works
 6. **If a leak or similar incident occurs**: If a leak or similar incident involving your information occurs, we will notify you and the supervisory authorities in accordance with the law.
 7. **Risks of communicating over the internet**: When communicating over the internet, there is a risk that third parties may see or use information. Please do not use your own or anyone else's personal information in your player name or passphrase.
 
@@ -189,7 +189,7 @@ We may change this Policy in response to changes in laws or in the Service. When
 2. **Types of recipients**: The companies in Section 4 (the companies we entrust with handling information), and other users who see the information on the leaderboard and in the same room. We make sure that the entrusted companies handle information, under contract, only within the scope of our instructions.
 3. **Whether providing information is required**: Setting a player name is optional. Identifiers and game records are essential for the online features (the same as "Effect of not providing information" in 15-2).
 4. **Requests for access and correction**: You can ask for access to and correction of your information. Please send requests to the contact point in Section 13 (STP WORKS Co., Ltd., support@stp.works).
-5. **Transfer outside Macau**: Your information is transferred to, and handled in, the countries in 15-1, item 1. [The procedures required by Macau law (consent, and notification to the authority) will be decided after review by a lawyer]
+5. **Transfer outside Macau**: Your information is transferred to, and handled in, the countries in 15-1, item 1.
 
 ### 15-4. For Users Living in the United States, Australia, New Zealand, and Other Countries
 
@@ -199,4 +199,4 @@ We may change this Policy in response to changes in laws or in the Service. When
 
 ---
 
-[Date established] Established on [Month] [Day], [Year]
+Established on November 10, 2026

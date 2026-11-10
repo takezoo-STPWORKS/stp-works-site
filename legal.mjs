@@ -2,7 +2,7 @@
 //
 // 文面は data/legal/<アプリ>/<言語>/*.md（元の文書から本文だけを取り出したもの）。
 // ★ 非公開の扱い（2026-11-10 ユーザー決定）：トップ・メニュー・サイトマップからはリンクしない／noindex。
-//    弁護士の確認の後に文面を差し替えてから公開する。
+//    元の文書の【 】は 2026-11-10 のユーザーの指示で埋めた・消した（data/legal の .md に反映済み）。
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
